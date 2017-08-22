@@ -1,4 +1,4 @@
-package omni.driver;
+package com.omni.module.driver;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,17 +20,17 @@ public class DriverInit {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
         if(browserType.equalsIgnoreCase("chrome")) {
-            System.setProperty("webdriver.chrome.driver", "/Users/rtatavarty/chromedriver/chromedriver");
+            System.setProperty("webdriver.chrome.omnitest", "/Users/rtatavarty/chromedriver/chromedriver");
             driver = new ChromeDriver();
         }
 
         else if(browserType.equalsIgnoreCase("IE")) {
-            System.setProperty("webdriver.chrome.driver", "/Users/rtatavarty/chromedriver/chromedriver");
+            System.setProperty("webdriver.chrome.omnitest", "/Users/rtatavarty/chromedriver/chromedriver");
             driver = new ChromeDriver();
         }
 
         else if(browserType.equalsIgnoreCase("Safari")) {
-            System.setProperty("webdriver.chrome.driver", "/Users/rtatavarty/chromedriver/chromedriver");
+            System.setProperty("webdriver.chrome.omnitest", "/Users/rtatavarty/chromedriver/chromedriver");
             driver = new ChromeDriver();
         }
 
