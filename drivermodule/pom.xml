@@ -4,7 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.drivermodule</groupId>
+    <parent>
+        <groupId>omni.omnitest</groupId>
+        <artifactId>omnitest</artifactId>
+        <version>1.0</version>
+        <relativePath>../../Omnitest/pom.xml</relativePath>
+    </parent>
+
     <artifactId>drivermodule</artifactId>
     <packaging>jar</packaging>
     <name>drivermodule</name>
