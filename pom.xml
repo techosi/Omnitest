@@ -1,46 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-    <groupId>omni.omnitest</groupId>
-    <artifactId>omnitest</artifactId>
-    <packaging>pom</packaging>
-    <version>1.0</version>
-    <name>omnitest</name>
-    <url>http://maven.apache.org</url>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <addClasspath>true</addClasspath>
-                            <mainClass>DriverInit</mainClass>
-                        </manifest>
-                    </archive>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+	<groupId>org.omnitest</groupId>
+	<artifactId>omnitest</artifactId>
+	<packaging>jar</packaging>
+	<name>omnitest</name>
+	<version>1.0</version>
+	<url>http://maven.apache.org</url>
+	<scm>
+		<url>https://github.com/techosi/Omnitest</url>
+		<connection>scm:git:git@github.com:techosi/Omnitest.git</connection>
+		<developerConnection>scm:git:git@github.com:techosi/Omnitest.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+    <developers>
+        <developer>
+            <id>engineer</id>
+            <name>Mohan Gundala</name>
+            <email>mgundala@osius.com</email>
+            <timezone>UTC+5:30</timezone>
+        </developer>
+                <developer>
+            <id>engineer</id>
+            <name>Venkat Chilukuri</name>
+            <email>vchilukuri@osius.com</email>
+            <timezone>UTC+5:30</timezone>
+        </developer>
+                <developer>
+            <id>engineer</id>
+            <name>Rama Tatavarthy</name>
+            <email>rtatavarty@osius.com</email>
+            <timezone>UTC+3</timezone>
+        </developer>
+    </developers>
 
-    <modules>
-        <module>drivermodule</module>
-    </modules>
 
-    <scm>
-        <url></url>
-    </scm>
-
-    <dependencies>
-
-    </dependencies>
+	<!-- plugins -->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<mainClass>DriverInit</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>
