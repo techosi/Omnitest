@@ -100,7 +100,7 @@
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<mainClass>com.mkyong.core.driver.DriverInit</mainClass>
+							<mainClass>com.omni.module.driver.DriverInit</mainClass>
 							<classpathPrefix>dependency-jars/</classpathPrefix>
 						</manifest>
 					</archive>
